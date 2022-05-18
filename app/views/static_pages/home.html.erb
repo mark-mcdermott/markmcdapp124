@@ -1,0 +1,16 @@
+<h1>Home</h1>
+
+<% if logged_in? %>
+  <p>Hi <%= current_user.username %>, you are logged in</p>
+<% else %>
+  <p>You are not logged in</p>
+<% end %>
+
+
+<% if !logged_in? %>
+  <%= button_to 'Log in', '/login', method: :get, class: 'btn btn-primary' %>
+<% else %>
+  <%= button_to 'Log out', '/logout', method: :delete, class: 'btn btn-primary' %>
+<% end %>
+
+<%= button_to 'Sign up', '/signup', method: :get, class: 'btn btn-primary' %>
