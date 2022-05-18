@@ -7,6 +7,18 @@ h1 {
 	font-weight: bold;
 }
 
+header {
+
+	.icon {
+		font-size: 2.25rem;
+	}
+
+	.navbar-title {
+		font-size: 1.75rem;
+	}
+
+}
+
 form {
 	
 	&.button_to {
@@ -18,3 +30,4 @@ form {
 	}
 
 }
+
